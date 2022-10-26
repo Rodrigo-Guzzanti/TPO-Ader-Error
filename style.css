@@ -19,6 +19,8 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  position: relative;
+  min-height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -37,6 +39,105 @@ main {
   margin-left: 5rem;
   padding: 0;
 }
+
+/*------------------------------------------CONTACTO-------------------------------------------*/
+
+.registro {
+  border: 1px solid --bg-secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.title-contact {
+  font-size: 22px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.3ch;
+}
+
+.form-register {
+  width: 400px;
+  background-color: var(--bg-secondary);
+  padding: 3rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  width: 100%;
+  background: var(--bg-primary);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #3003fc;
+  font-size: 1rem;
+  color: #fff;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+  border: 1px solid #3003fc;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  color: var(--text-primary);
+  padding: 1rem;
+}
+legend {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.botons {
+  width: 100%;
+  border: none;
+  background: var(--bg-primary);
+  padding: 17px;
+  font-size: 16px;
+  color: #fff;
+  transition: 1s;
+}
+
+.botons:hover {
+  background-color: var(--text-logo);
+  cursor: pointer;
+}
+
+/*--------------------------------------------VALIDACION-----------------------------------------------------------*/
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: var(--text-logo);
+  padding-top: 2rem;
+}
+
+#valNombre {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.error {
+  color: var(--text-secondary);
+  display: block;
+  font-size: 1rem;
+}
+#error {
+  color: var(--text-secondary);
+  display: block;
+}
+
+/*------------------------------------------------------------------------*/
 
 .navbar {
   position: fixed;
@@ -123,7 +224,86 @@ main {
 }
 
 .portada-contenedor {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+/* --- SHOP --- */
+
+.shop-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px hsl(0 4% 2% / 10%);
+}
+
+.shop-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+  padding-top: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 6rem;
+}
+
+.item-tarjeta:hover {
+  padding: 0.2rem;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.item-tarjeta-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.item-nombre {
+  margin-bottom: 0.3rem;
+}
+.api-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--text-primary);
+}
+
+.carrito {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  min-height: 100vh;
+  padding: 1.2rem;
+}
+
+.carrito-icon {
+  padding-right: 2rem;
+}
+
+.add-cart:hover {
+  color: var(--detail);
+}
+
+.section-titulo {
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.iframe-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.iframe-titulo {
+  color: var(--bg-secondary);
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  max-width: 400px;
 }
 
 footer {

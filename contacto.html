@@ -70,6 +70,55 @@
             <div class="portada-logo">
                 <h1 class="logo"><a href="index.html">Ader Error</a></h1>
             </div>
+
+
+
+            <!--FORMULARIO -->
+
+
+            <div class="registro">
+                <form action="" class="form-register">
+                    <h4 class="title-contact">Contacto</h4>
+                    <input class="controls" type="text" id="Nombre" placeholder="Ingresar Nombre">
+                    <span></span>
+                    <p id="valNombre"></p>
+                    <input class="controls" type="text" id="Apellido" placeholder="Ingresar Apellido">
+                    <span></span>
+                    <p id="valApellido"></p>
+
+
+                    <input class="controls" type="email" id="Email" placeholder="Ingresar email">
+                    <span></span>
+
+
+
+
+                    <fieldset>
+                        <legend>Género</legend>
+                        <label for="">Hombre<input type="radio" name="genero" checked></label>
+                        <label for="">Mujer<input type="radio" name="genero"> </label>
+                        <label for="">Otro<input type="radio" name="genero"></label>
+                    </fieldset>
+
+
+                    <input type="submit" class="botons" id="boton">
+                    <div class="div-error">
+                        <span id="error"></span>
+                    </div>
+                    <p class="warnings" id="warnings"></p>
+                </form>
+            </div>
+
+            <!----------- FIN FORMULARIO ----------->
+
+            <div class="iframe-location">
+                <h2 class="iframe-titulo">¿Dónde estamos?</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405057.0683059787!2d126.57345232932057!3d37.5195125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca37956a1a4e5%3A0x69b9037c08a29381!2sADER%20ERROR%20SINSA%20SPACE!5e0!3m2!1sen!2sar!4v1666752282876!5m2!1sen!2sar"
+                    width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
         </section>
     </main>
 
@@ -114,5 +163,6 @@
         </section>
     </footer>
 </body>
+<script src="validacion.js"></script>
 
 </html>
