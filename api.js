@@ -6,4 +6,5 @@ fetch('http://www.254shadesofgray.com/api/GreyOfTheDay')
 
       Name.innerHTML = data.Name
       HexValue.innerHTML = data.HexValue
+      apiContenedor.style.backgroundColor = data.HexValue
   });
